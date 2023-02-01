@@ -1,34 +1,44 @@
-<!-- Title -->
-<h1 align="center">
-👋 Welcome to <br><code>@expo/config-plugins</code>
-</h1>
+# My Universal React Project
 
-<p align="center">A powerful tool for generating native app code from a unified JavaScript interface.</p>
-
-<p align="center">
-  <img src="https://flat.badgen.net/packagephobia/install/@expo/config-plugins">
-
-  <a href="https://www.npmjs.com/package/@expo/config-plugins">
-    <img src="https://flat.badgen.net/npm/dw/@expo/config-plugins" target="_blank" />
+<p>
+  <!-- iOS -->
+  <a href="https://itunes.apple.com/app/apple-store/id982107779">
+    <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
+  </a>
+  <!-- Android -->
+  <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample">
+    <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
+  </a>
+  <!-- Web -->
+  <a href="https://docs.expo.dev/workflow/web/">
+    <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
   </a>
 </p>
 
-<!-- Body -->
+## 🚀 How to use
 
-Most basic functionality can be controlled by using the the [static Expo config](https://docs.expo.dev/versions/latest/config/app/), but some features require manipulation of the native project files. To support complex behavior we've created config plugins, and mods (short for modifiers).
+- Install packages with `yarn` or `npm install`.
+  - If you have native iOS code run `npx pod-install`
+- Run `yarn start` to start the bundler.
+- Open the project in a React runtime to try it:
+  - iOS: [Client iOS](https://itunes.apple.com/app/apple-store/id982107779)
+  - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
+  - Web: Any web browser
 
-For more info, please refer to the official docs: [Config Plugins](https://docs.expo.dev/guides/config-plugins/).
+## Adding Native Code
 
-## Environment Variables
+This project can be run from a web browser or the Expo client app. You may find that you want to add more native code later on. You can do this by ejecting the project and rebuilding it yourself.
 
-### `EXPO_DEBUG`
+- Run `yarn eject` to create the native projects.
+- You can still run your project in the web browser or Expo client, you just won't be able to access any new native modules you add.
 
-Print debug information related to static plugin resolution.
+## Publishing
 
-### `EXPO_CONFIG_PLUGIN_VERBOSE_ERRORS`
+- Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.dev/distribution/app-stores/).
+- Deploy the website using this guide: [Web deployment](https://docs.expo.dev/distribution/publishing-websites/).
 
-Show all error info related to static plugin resolution. Requires `EXPO_DEBUG` to be enabled.
+## 📝 Notes
 
-### `EXPO_USE_UNVERSIONED_PLUGINS`
-
-Force using the fallback unversioned plugins instead of a local versioned copy from installed packages, this should only be used for testing the CLI.
+- Learn more about [Universal React](https://docs.expo.dev/).
+- See what API and components are [available in the React runtimes](https://docs.expo.dev/versions/latest/).
+- Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
